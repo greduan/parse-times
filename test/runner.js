@@ -13,4 +13,5 @@ Promise
   .all(inFileNames.map((fileName) => {
     return parser(resolve(__dirname, 'ins', fileName))
   }))
-  .then(() => console.log('finished'))
+  .then((results) => results.map((a) => a.filter((b) => b)))
+  .then((results) => console.log(results))
