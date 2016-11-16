@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Simple parser for simple time-logging format",
   "main": "lib/index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/greduan/parse-times/issues"
   },
-  "homepage": "https://github.com/greduan/parse-times#readme"
+  "homepage": "https://github.com/greduan/parse-times#readme",
+  "dependencies": {
+    "byline": "^5.0.0"
+  }
 }
